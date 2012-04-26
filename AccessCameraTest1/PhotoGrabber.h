@@ -7,7 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QTKit/QTKit.h>
 
-@interface PhotoGrabber : NSObject
+@protocol PhotoGrabberDelegate <NSObject>
+
+-(void)photoGrabber:(NSString *) image;
+
+@end
+
+@interface PhotoGrabber : NSObject{
+    CVImageBufferRef currentImage;
+    
+    QTCaptureDevice * video;
+    QTCaptureDecompressedVideoOutput * output;
+    QTCaptureInput * input;
+    QTCaptureSession * session;
+    
+    id<PhotoGrabberDelegate> delegate;
+}
+@property (nonatomic, assign) id<PhotoGrabberDelegate> delegate;
+
+-(void) grabPhoto;
+-(NSString *) deviceName;
 
 @end

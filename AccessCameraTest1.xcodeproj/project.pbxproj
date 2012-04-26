@@ -13,7 +13,9 @@
 		BB706C4E1549313100462E0A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB706C4C1549313100462E0A /* Credits.rtf */; };
 		BB706C511549313100462E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB706C501549313100462E0A /* AppDelegate.m */; };
 		BB706C541549313200462E0A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB706C521549313100462E0A /* MainMenu.xib */; };
-		BBB777131549323B001E977D /* ImageProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB777121549323B001E977D /* ImageProcesser.m */; };
+		BB7D9C61154968BD003AAE95 /* PhotoGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D9C60154968BD003AAE95 /* PhotoGrabber.m */; };
+		BB7D9C6315496913003AAE95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D9C6215496913003AAE95 /* QuartzCore.framework */; };
+		BB7D9C651549691B003AAE95 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D9C641549691B003AAE95 /* QTKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +32,10 @@
 		BB706C4F1549313100462E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB706C501549313100462E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB706C531549313200462E0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		BBB777111549323B001E977D /* ImageProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcesser.h; sourceTree = "<group>"; };
-		BBB777121549323B001E977D /* ImageProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProcesser.m; sourceTree = "<group>"; };
+		BB7D9C5F154968BD003AAE95 /* PhotoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGrabber.h; sourceTree = "<group>"; };
+		BB7D9C60154968BD003AAE95 /* PhotoGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGrabber.m; sourceTree = "<group>"; };
+		BB7D9C6215496913003AAE95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB7D9C641549691B003AAE95 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7D9C651549691B003AAE95 /* QTKit.framework in Frameworks */,
+				BB7D9C6315496913003AAE95 /* QuartzCore.framework in Frameworks */,
 				BB706C3E1549313100462E0A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +55,8 @@
 		BB706C2E1549313100462E0A = {
 			isa = PBXGroup;
 			children = (
+				BB7D9C641549691B003AAE95 /* QTKit.framework */,
+				BB7D9C6215496913003AAE95 /* QuartzCore.framework */,
 				BB706C431549313100462E0A /* AccessCameraTest1 */,
 				BB706C3C1549313100462E0A /* Frameworks */,
 				BB706C3A1549313100462E0A /* Products */,
@@ -88,9 +96,9 @@
 				BB706C4F1549313100462E0A /* AppDelegate.h */,
 				BB706C501549313100462E0A /* AppDelegate.m */,
 				BB706C521549313100462E0A /* MainMenu.xib */,
+				BB7D9C5F154968BD003AAE95 /* PhotoGrabber.h */,
+				BB7D9C60154968BD003AAE95 /* PhotoGrabber.m */,
 				BB706C441549313100462E0A /* Supporting Files */,
-				BBB777111549323B001E977D /* ImageProcesser.h */,
-				BBB777121549323B001E977D /* ImageProcesser.m */,
 			);
 			path = AccessCameraTest1;
 			sourceTree = "<group>";
@@ -172,7 +180,7 @@
 			files = (
 				BB706C4A1549313100462E0A /* main.m in Sources */,
 				BB706C511549313100462E0A /* AppDelegate.m in Sources */,
-				BBB777131549323B001E977D /* ImageProcesser.m in Sources */,
+				BB7D9C61154968BD003AAE95 /* PhotoGrabber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ImageProcesser.h
+//  PhotoGrabber.h
 //  AccessCameraTest1
 //
 //  Created by Rattapoom Jiemtea on 4/26/55 BE.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ImageProcesser : NSObject
+@interface PhotoGrabber : NSObject
 
 @end

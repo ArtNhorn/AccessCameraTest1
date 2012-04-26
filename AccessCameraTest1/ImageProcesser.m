@@ -8,6 +8,9 @@
 
 #import "ImageProcesser.h"
 
-@implementation ImageProcesser
+@implementation ImageProcesser{
+    int a;
+}
+
 
 @end
